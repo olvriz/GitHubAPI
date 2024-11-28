@@ -1,6 +1,9 @@
-# GitHub PR Insights Repository
+# GitHub PR API Insights Repository
 
 This repository contains two main files that work together to automate the collection and analysis of Pull Request (PR) data from GitHub repositories. These tools aim to provide insights into PR metrics such as approval time, review patterns, and SLA compliance.
+
+![Uploading image.png…]()
+
 
 ## Overview
 
