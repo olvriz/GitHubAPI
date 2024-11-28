@@ -2,8 +2,7 @@
 
 This repository contains two main files that work together to automate the collection and analysis of Pull Request (PR) data from GitHub repositories. These tools aim to provide insights into PR metrics such as approval time, review patterns, and SLA compliance.
 
-![Uploading image.png…]()
-
+<img width="1215" alt="image" src="https://github.com/user-attachments/assets/213a43d4-b9a4-4f99-ba15-9e0b91c53ba7">
 
 ## Overview
 
