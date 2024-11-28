@@ -60,13 +60,13 @@ The Airflow DAG orchestrates the execution of the Databricks notebook for multip
 
 ---
 
-### Steps
+# Steps
 
 ## 1. Clone the repository and set up the environment:
 git clone <repository_url>
 cd <repository_folder>
 
-# Install required dependencies for Airflow
+### Install required dependencies for Airflow
 `pip install apache-airflow apache-airflow-providers-databricks`
 
 Ensure PySpark and other dependencies are available for Databricks
@@ -91,11 +91,9 @@ Example: conda activate <your_environment_name>
 cp airflow_dag.py <airflow_dags_folder>
 
 # Start Airflow services
-airflow scheduler &
-airflow webserver
+airflow scheduler & airflow webserver
 
-# Access the Airflow web UI to enable and trigger the DAG
-# URL: http://localhost:8080
+Access the Airflow web UI to enable and trigger the DAG
 
 ### Example schema:
 
