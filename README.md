@@ -62,31 +62,30 @@ The Airflow DAG orchestrates the execution of the Databricks notebook for multip
 
 ### Steps
 
-1. Clone the repository and set up the environment:
-# Clone the repository
+## 1. Clone the repository and set up the environment:
 git clone <repository_url>
 cd <repository_folder>
 
 # Install required dependencies for Airflow
-pip install apache-airflow apache-airflow-providers-databricks
+`pip install apache-airflow apache-airflow-providers-databricks`
 
-# Ensure PySpark and other dependencies are available for Databricks
-# If using a specific environment manager (e.g., conda), activate it first
-# Example: conda activate <your_environment_name>
+Ensure PySpark and other dependencies are available for Databricks
+If using a specific environment manager (e.g., conda), activate it first
+Example: conda activate <your_environment_name>
 
-2. Update the Databricks notebook file (databricks_notebook.py):
-# Replace placeholders with your actual values:
-# - Replace `github_token` with your GitHub personal access token
-# - Replace `perfil` with your GitHub workspace name
+## 2. Update the Databricks notebook file (databricks_notebook.py):
+ Replace placeholders with your actual values:
+ - Replace `github_token` with your GitHub personal access token
+ - Replace `perfil` with your GitHub workspace name
 
-# Update the Airflow DAG file (airflow_dag.py):
-# Replace placeholders with your actual values:
-# - `git_url`: URL of the GitHub repository hosting the notebook
-# - `git_branch`: Branch containing the notebook
-# - `dbw_iris_restapi_cluster_id`: ID of your Databricks cluster
+## Update the Airflow DAG file (airflow_dag.py):
+### Replace placeholders with your actual values:
+ - `git_url`: URL of the GitHub repository hosting the notebook
+ - `git_branch`: Branch containing the notebook
+ - `dbw_iris_restapi_cluster_id`: ID of your Databricks cluster
 
 --
-3. Setup Airflow
+## 3. Setup Airflow
 
 # Add the Airflow DAG to your DAGs folder
 cp airflow_dag.py <airflow_dags_folder>
@@ -98,15 +97,13 @@ airflow webserver
 # Access the Airflow web UI to enable and trigger the DAG
 # URL: http://localhost:8080
 
-Example schema:
+### Example schema:
 
-plaintext
 | repository | created_at | merged_at | approver | pr_id | labels | sla (seconds) | num_comments | num_changes | ...
 
 Airflow DAG Logs
 Includes:
-
-Task execution details
-Cooldown handling for GitHub API rate limits
-Error logs for troubleshooting
+- Task execution details
+- Cooldown handling for GitHub API rate limits
+- Error logs for troubleshooting
 
