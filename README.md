@@ -84,7 +84,6 @@ Example: conda activate <your_environment_name>
  - `git_branch`: Branch containing the notebook
  - `dbw_iris_restapi_cluster_id`: ID of your Databricks cluster
 
---
 ## 3. Setup Airflow
 
 # Add the Airflow DAG to your DAGs folder
